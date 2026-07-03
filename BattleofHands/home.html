@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle of Hands</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Heading -->
+    <header>
+        <h1>⚔️ Battle of Hands ⚔️</h1>
+    </header>
+
+    <!-- Game Container -->
+    <div class="container">
+
+        <!-- Choice Buttons -->
+        <div id="hands">
+
+            <button id="rock" class="choice">
+                ✊
+            </button>
+
+            <button id="paper" class="choice">
+                ✋
+            </button>
+
+            <button id="scissors" class="choice">
+                ✌️
+            </button>
+
+        </div>
+
+        <!-- Player & Computer Choices -->
+        <div id="choice">
+
+            <div class="choiceBox">
+
+                <h2>Your Choice</h2>
+
+                <p id="userChoice">❔</p>
+
+            </div>
+
+            <div class="choiceBox">
+
+                <h2>Computer Choice</h2>
+
+                <p id="computerChoice">❔</p>
+
+            </div>
+
+        </div>
+
+        <!-- Score -->
+        <div id="scoreBox">
+
+            <div class="scoreCard">
+
+                <h3>You</h3>
+
+                <h1 id="userScore">0</h1>
+
+            </div>
+
+            <div class="scoreCard">
+
+                <h3>Computer</h3>
+
+                <h1 id="computerScore">0</h1>
+
+            </div>
+
+        </div>
+
+        <!-- Result -->
+        <div id="resultBox">
+
+            <h2>🏆 Result</h2>
+
+            <p id="result">
+                Click a hand to start the battle!
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

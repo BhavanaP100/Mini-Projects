@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#FFF8EE;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+header h1{
+    background:#071E34;
+    color:white;
+    padding:18px;
+    font-size:38px;
+}
+
+.container{
+    width:90%;
+    margin:40px auto;
+}
+
+#hands{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    margin-bottom:40px;
+}
+
+.choice{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:white;
+    font-size:80px;
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0 5px 15px rgba(3, 119, 10, 0.452);
+}
+
+.choice:hover{
+    transform:scale(1.08);
+}
+
+#rock{
+    border:6px solid #2ecc71;
+}
+
+#paper{
+    border:6px solid #3498db;
+}
+
+#scissors{
+    border:6px solid #e74c3c;
+}
+
+#choice{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-bottom:35px;
+}
+
+.choiceBox{
+    width:280px;
+    height:120px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.choiceBox p{
+    font-size:40px;
+    margin-top:10px;
+}
+
+#scoreBox{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+
+    margin-bottom:25px;
+}
+
+.scoreCard{
+    width:180px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.scoreCard h1{
+    background:none;
+    color:#071E34;
+    font-size:30px;
+    padding:0;
+}
+
+#resultBox{
+    width:650px;
+    margin:auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+#result{
+    font-size:28px;
+    margin-top:15px;
+    font-weight:bold;
+}
