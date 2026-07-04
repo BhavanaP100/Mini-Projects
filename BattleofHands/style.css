@@ -19,8 +19,10 @@ header h1{
 
 .container{
     width:90%;
+    max-width:1200px;
     margin:40px auto;
 }
+
 
 #hands{
     display:flex;
@@ -28,6 +30,7 @@ header h1{
     align-items:center;
     gap:50px;
     margin-bottom:40px;
+    flex-wrap:wrap;
 }
 
 .choice{
@@ -37,10 +40,8 @@ header h1{
     background:white;
     font-size:80px;
     cursor:pointer;
-
     transition:0.3s;
-
-    box-shadow:0 5px 15px rgba(3, 119, 10, 0.452);
+    box-shadow:0 5px 15px rgba(3,119,10,.45);
 }
 
 .choice:hover{
@@ -59,21 +60,21 @@ header h1{
     border:6px solid #e74c3c;
 }
 
+
 #choice{
     display:flex;
     justify-content:center;
     gap:40px;
     margin-bottom:35px;
+    flex-wrap:wrap;
 }
 
 .choiceBox{
     width:280px;
+    max-width:100%;
     height:120px;
-
     background:white;
-
     border-radius:20px;
-
     box-shadow:0 5px 15px rgba(0,0,0,.12);
 
     display:flex;
@@ -87,12 +88,14 @@ header h1{
     margin-top:10px;
 }
 
+
+
 #scoreBox{
     display:flex;
     justify-content:center;
     gap:80px;
-
     margin-bottom:25px;
+    flex-wrap:wrap;
 }
 
 .scoreCard{
@@ -100,7 +103,6 @@ header h1{
     background:white;
     border-radius:20px;
     padding:20px;
-
     box-shadow:0 5px 15px rgba(0,0,0,.12);
 }
 
@@ -111,16 +113,14 @@ header h1{
     padding:0;
 }
 
+
 #resultBox{
-    width:650px;
+    width:90%;
+    max-width:650px;
     margin:auto;
-
     background:white;
-
     padding:25px;
-
     border-radius:20px;
-
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
@@ -128,4 +128,81 @@ header h1{
     font-size:28px;
     margin-top:15px;
     font-weight:bold;
+}
+
+/* ================= Tablet ================= */
+
+@media (max-width:900px){
+
+    header h1{
+        font-size:32px;
+    }
+
+    #hands{
+        gap:25px;
+    }
+
+    .choice{
+        width:140px;
+        height:140px;
+        font-size:65px;
+    }
+
+    #choice{
+        gap:20px;
+    }
+
+    #scoreBox{
+        gap:30px;
+    }
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width:600px){
+
+    header h1{
+        font-size:26px;
+        padding:15px;
+    }
+
+    #hands{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .choice{
+        width:120px;
+        height:120px;
+        font-size:55px;
+    }
+
+    #choice{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .choiceBox{
+        width:90%;
+    }
+
+    #scoreBox{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .scoreCard{
+        width:90%;
+        max-width:220px;
+    }
+
+    #resultBox{
+        width:95%;
+    }
+
+    #result{
+        font-size:22px;
+    }
 }
